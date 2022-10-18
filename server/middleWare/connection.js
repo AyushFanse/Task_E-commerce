@@ -15,3 +15,7 @@ exports.connect = () => {
     process.exit();
   }
 };
+
+exports.close = () => {
+  return mongoose.disconnect();
+};
