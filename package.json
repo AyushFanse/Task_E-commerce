@@ -1,0 +1,14 @@
+{
+  "name": "algodomain",
+  "version": "1.0.0",
+  "description": "It will start both the server and client side concurrently ",
+  "scripts": {
+    "both": "cd server && npm run both",
+    "server-install": "cd server && npm install",
+    "client-install": "cd client && npm install",
+    "start": "npm run both",
+    "download": "server-install && client-install"
+  },
+  "author": "Ayush Fanse",
+  "license": "ISC"
+}

@@ -1,0 +1,127 @@
+.app_container.cart {
+    padding: 80px 10px 0px 10px;
+    height: auto;
+    width: 100%;
+}
+
+.cart_inner {
+    width: 100%;
+}
+
+.cart_card_outer {
+    height: auto;
+    min-height: 160px;
+    width: 96%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(43, 43, 43, 0.425);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    gap: 20px;
+}
+
+.cart_card_outer .details .name {
+    font-size: 1.2rem;
+    cursor: default;
+}
+
+.cart_card_outer .details .type {
+    font-size: 1rem;
+    color: grey;
+    cursor: default;
+}
+
+.cart_card_outer .details .price {
+    font-size: 1rem;
+    color: grey;
+    cursor: default;
+}
+
+.cart_card_outer .counter {
+    width: 35px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.cart_card_outer #quantity {
+    width: 25px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.pricing .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price span:last-child {
+    font-size: 0.9rem;
+}
+
+.buy_button {
+    padding: 3px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity {
+    padding: 0px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+    .cart_card_outer .details {
+        width: 30%;
+        margin: auto;
+    }
+
+    .cart_card_outer .pricing {
+        width: 30%;
+        margin: auto;
+    }
+    
+    .cart_quantity {
+        margin: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .app_container.cart {
+        padding: 65px 10px 0px 10px;
+        height: auto;
+        width: 100%;
+    }
+
+    .cart_card_outer {
+        width: calc(100% - 80px);
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+        padding: 10px 25px;
+        flex-direction: column;
+    }
+    .cart_card_outer .details {
+        width: 100%;
+    }
+
+    .cart_card_outer .pricing {
+        width: 100%;
+    }
+
+    .cart_quantity {
+        width: 100%;
+        display:flex;
+        justify-content: space-evenly;
+    }
+
+    .cart_card_outer .counter {
+        margin:auto;
+    }
+}
