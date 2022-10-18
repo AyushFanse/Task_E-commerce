@@ -56,13 +56,13 @@ E-commerce website where you can add or remove products from the cart.
 ## API Reference
 
 
-### You can open the front with
+### You can open the client with
 
 ```http
   http://localhost:3000/
 ```
 
-### You can open the backend with
+### You can open the server with
 
 ```http
   http://localhost:3001/
