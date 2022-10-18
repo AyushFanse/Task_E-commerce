@@ -7,9 +7,9 @@ E-commerce website where you can add or remove products from the cart.
 
 ### To download and use this project 
 
-### download the file and just use this commands in bash and stay on './Task_Ecommerce'
+### download the file and just use this commands in bash and stay on './Task_E-commerce'
 
-#### To download all the neccessary packages
+#### To download all the necessary packages
 ```bash
   npm run download 
 ```
@@ -36,7 +36,7 @@ E-commerce website where you can add or remove products from the cart.
 
 ### Please create your own server on MongoDB Atlas and paste that in '.env' file.
 ```bash
-  MONGO_URI=mongodb+srv://<username>:<pasword>@<cluster>.dprdu1v.mongodb.net?retryWrites=true&w=majority
+  MONGO_URI=mongodb+srv://<username>:<password>@<cluster>.dprdu1v.mongodb.net?retryWrites=true&w=majority
 ```
 
 ```bash
@@ -53,18 +53,16 @@ E-commerce website where you can add or remove products from the cart.
 ```bash 
   npm run both
 ```
-## Tech Stack
-
-**Client:** React, MaterialUi
-
-**Server:** Node, Express, Mongoos
-
-**Database:** MangoDB
-
-
 ## API Reference
 
-### You can open the backen with
+
+### You can open the front with
+
+```http
+  http://localhost:3000/
+```
+
+### You can open the backend with
 
 ```http
   http://localhost:3001/
@@ -116,7 +114,7 @@ E-commerce website where you can add or remove products from the cart.
 | `userId`| `string` | **Required**. userId will be pass through params. |
 | `ProId`| `string` | **Required**. auto generated '_id' will be pass through params. |
 | `ProductId`| `string` | **Required**. ProductId will be pass through params. |
-| `quantity` | `integer` | **Required**. Quantiti of the product. |
+| `quantity` | `integer` | **Required**. Quantity of the product. |
 | `password` | `string` | New password. |
 
 #### To get single user.
@@ -142,7 +140,7 @@ E-commerce website where you can add or remove products from the cart.
 | `productId`      | `string` | **Required**. productId. |
 | `name`      | `string` | **Required**. Name of the product. |
 | `productType`      | `string` | **Required**. Type of the Product. |
-| `category`      | `string` | **Required**. Catagory of the product. |
+| `category`      | `string` | **Required**. Category of the product. |
 | `basePrice`      | `integer` | **Required**. The Base Price of the product. |
 
 #### To get all products.
@@ -173,7 +171,7 @@ E-commerce website where you can add or remove products from the cart.
 | `productId`      | `string` | productId will be pass through params. |
 | `name`      | `string` | Name of the product. |
 | `productType`      | `string` | Type of the Product. |
-| `category`      | `string` | Catagory of the product. |
+| `category`      | `string` | Category of the product. |
 | `basePrice`      | `integer` | The Base Price of the product. |
 
 #### To get single product.
@@ -186,6 +184,15 @@ E-commerce website where you can add or remove products from the cart.
 | :-------- | :------- | :-------------------------------- |
 | `productId`| `string` | **Required**. auto generated '_id' will be pass through params. |
 
+
+
+## Tech Stack
+
+**Client:** React, MaterialUi
+
+**Server:** Node, Express, Mongoose
+
+**Database:** MangoDB
 
 
 ## Screenshots
